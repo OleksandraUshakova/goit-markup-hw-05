@@ -127,11 +127,6 @@ margin-left: 50px;
     align-content: center;
 }
 
-/* .headericons-items:hover,
-.headericons-items:focus{
-    fill:var(--accent-color) 
-} */
-
 .nav-contacts{
     display: flex;
 }
@@ -159,7 +154,6 @@ background-position: center;
 .main-title-section{
 align-items: center;
 text-align: center;
-/* background-color: var(--primary-text-color) */
 }
 
 .main-title{
@@ -171,20 +165,33 @@ letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--second-title-color);
 padding-top: 200px;
+margin-bottom: 30px;
+margin-left: auto;
+    margin-right: auto;
 }
 
 .order-button{
+    display: block;
+    padding: 10px 32px;
+    min-width: 200px;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
-padding: 10px 32px;
 background-color: #2196F3;
 color: var(--second-title-color);
-margin-top: 30px;
+margin: 0 auto;
+/* transition: 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+
 }
 
 .btn{
     font-family: inherit;
     cursor: pointer; 
+    /* transition-property: background-color; */
+    
+/* transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
 .btn{
@@ -193,13 +200,47 @@ font-size: 16px;
 line-height: 1.87;
 color: var(--second-title-color);
 margin-bottom: 200px;
+
 }
 
 .btn:hover,
 .btn:focus{
-    color: var(--accent-color);
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);;
 }
 
+/* -----модальне вікно----- */
+.backdrop{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.2);
+    visibility: visible;
+    /* transition: cubic-bezier(0.4, 0, 0.2, 1);  */
+}
+/* .backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+} */
+
+.modal{ 
+    width: 528px;
+    height: 521px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+}
+
+.modal{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,50%);
+
+}
 /* ------------hero-------- */
 /* --фонові картинки героя-- */
 .listicons{

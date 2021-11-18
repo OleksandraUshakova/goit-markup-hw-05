@@ -55,7 +55,13 @@
     <div class="overlay"> 
         <div class="container">
         <h1 class="main-title">Эффективные решения<br> для вашего бизнеса</h1>
-        <button class="order-button btn" type="button">Заказать услугу</button>
+        <button type="button" data-modal-open class="order-button btn">Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, illo?</p>
+                <button type="button" data-modal-close></button>
+            </div>
+        </div>
         </div>
     </div>
     </section>
@@ -405,5 +411,6 @@
         </div> 
     </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
